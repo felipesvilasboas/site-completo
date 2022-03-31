@@ -6,6 +6,7 @@
     --color0: #0145AD;
     --color1: #1270FC;
     --color3: #FA4605;
+    --color4: #1DAD15;
 }
 
 * {
@@ -34,7 +35,7 @@ header {
 
 .menu {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     padding: 20px 0px;
 }
 
@@ -50,6 +51,12 @@ header > div > h1 {
     font-weight: 600;
 }
 
+.menu li:hover {
+    border: 1.8px solid black;
+    transition: .1s;
+    padding: 20px;
+}
+
 #ulzero li {
     display: inline;
     padding: 0px 3px;
@@ -57,7 +64,7 @@ header > div > h1 {
 
 
 main {
-    padding: 50px 30px;
+    padding: 150px 30px;
 }
 
 main h1, h2 {
@@ -74,6 +81,7 @@ main p {
     font-size: 1.1em;
 }
 
+
 .parte01 {
     display: flex;
     justify-content: center;
@@ -87,6 +95,31 @@ main p {
     max-width: 600px;
 }
 
+.ar01 > p {
+    padding-bottom: 40px;
+}
+
+#bt01 {
+    display: inline-flex;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 500;
+    background-color: var(--color4);
+    color: white;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.249);
+    text-shadow: 1px 1px 15px rgba(0, 0, 0, 0.314);
+    padding: 15px 70px;
+    text-align: center;
+    border-radius: 1px 1px 6px 1px;
+    transition: .3s;
+}
+
+#bt01:hover {
+    transform: scale(1.1);
+    background-color: #0145AD;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.622);
+    animation: alternate;
+}
+
 .parte02 {
     font-family: 'Heebo';
 }
@@ -96,6 +129,14 @@ main p {
     padding: 20px;
     justify-content: space-between;
     font-size: 0.8em;
+}
+
+.ul01 img {
+    transition: .3s;
+}
+
+.ul01 img:hover  {
+    transform: scale(1.3);
 }
 
 .ul01 h3 {
@@ -115,9 +156,13 @@ main p {
     color: black;
     font-size: 1em;
     text-align: center;
-    padding-top: 100px;
+    padding-top: 150px;
     padding-bottom: 40px;
     text-transform: uppercase;
+}
+
+#fundocaixa {
+    background-color: black;
 }
 
 #caixa {
@@ -131,6 +176,7 @@ main p {
 }
 
 #caixa h2 {
+    font-family: 'Barlow', sans-serif;
     color: white;
 }
 
@@ -185,6 +231,15 @@ footer h2 {
     header > div > h1  {
         padding: 0px;
         margin: 0px;
+    }
+
+    #bt01 {
+        display: block;
+        padding: 2vw;
+    }
+
+    ul {
+        flex-wrap: wrap;
     }
 
     ul p {
