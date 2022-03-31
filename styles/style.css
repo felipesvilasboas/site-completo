@@ -15,28 +15,46 @@
 
 body {
     background-color: #FAFAFA;
+    background-image: url('/images/desk.svg');
+    background-repeat: no-repeat;
+    background-position: 90% 19%;
+    background-size: 200px;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
 }
 
 
 header {
-    font-family: Arial, Helvetica, sans-serif;
-    border-bottom: 1px solid black;
+    font-family: 'Barlow', Helvetica, sans-serif;
+    border-bottom: 0.1px solid rgba(0, 0, 0, 0.217);
 }
 
 .menu {
     display: flex;
-    align-items: center;
-    padding: 20px 30px;
+    justify-content: space-evenly;
+    padding: 20px 0px;
 }
 
 header > div > h1 {
+    font-weight: 400;
     font-size: 1.5em;
     padding-right: 800px;
 }
 
 .menu > nav {
-    color: blue;
+    color: var(--color0);
+    font-size: 1.1em;
+    font-weight: 600;
 }
+
+#ulzero li {
+    display: inline;
+    padding: 0px 3px;
+}
+
 
 main {
     padding: 50px 30px;
@@ -70,18 +88,115 @@ main p {
 }
 
 .parte02 {
-
+    font-family: 'Heebo';
 }
 
 .ul01 {
     display: flex;
+    padding: 20px;
     justify-content: space-between;
+    font-size: 0.8em;
+}
+
+.ul01 h3 {
+    font-size: 1.5em;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.img02 {
+    display: block;
+    max-width: 70px;
+    margin: auto;
 }
 
 #h2parte02 {
     border-bottom: 0px;
     color: black;
-    font-size: 0.9em;
+    font-size: 1em;
     text-align: center;
     padding-top: 100px;
+    padding-bottom: 40px;
+    text-transform: uppercase;
 }
+
+#caixa {
+    background-image: linear-gradient(var(--color0), #3E54A3);
+    margin: 50px auto;
+    padding: 50px;
+    width: 900px;
+    height: 300px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#caixa h2 {
+    color: white;
+}
+
+#txt01 {
+    width: 500px;
+    height: 25px;
+}
+
+#txt02 {
+    margin-top: 10px;
+    width: 500px;
+    height: 150px;
+}
+
+#fundo01 {
+    width: 350px;
+}
+
+#fundo01 h1, h2, p {
+    font-size: 1em;
+    color: black;
+    border: 0px;
+}
+
+.parte03 {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    padding: 20px;
+    border-top: 0.1px solid rgba(0, 0, 0, 0.217);
+}
+
+footer {
+    font: normal 1.1em 'Barlow';
+}
+
+footer h2 {
+    font-weight: 700;
+}
+
+@media screen and (max-width: 1185px) {
+    header {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    header > div > h1  {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    ul p {
+        display: none;
+    }
+
+    #caixa {
+        display: none;
+    }
+
+    footer {
+        font-size: 1.5vw;
+    }
+}
+
