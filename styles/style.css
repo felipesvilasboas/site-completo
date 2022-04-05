@@ -222,6 +222,40 @@ footer h2 {
     font-weight: 700;
 }
 
+#ulfooter {
+    max-width: 90px;
+}
+
+#ulfooter li {
+    border-bottom: 2px solid #1DAD15;
+    padding: 1px;
+    transition-property: all;
+    transition-delay: 1s;
+    transition-duration: 2s;
+}
+
+#ulfooter li:hover {
+    border: 0px;
+    
+}
+
+#ulfooter02 {
+    max-width: 130px;
+}
+
+#ulfooter02 li {
+    border-bottom: 2px solid #1DAD15;
+    padding: 1px;
+    transition-property: all;
+    transition-delay: 1s;
+    transition-duration: 2s;
+}
+
+#ulfooter02 li:hover {
+    border: 0px;
+    
+}  
+
 @media screen and (max-width: 1185px) {
     header {
         padding: 0px;
@@ -263,5 +297,14 @@ footer h2 {
     footer {
         font-size: 1.5vw;
     }
+
+    #ulfooter {
+        max-width: 35px;
+    }
+
+    #ulfooter02 {
+        max-width: 120px;
+    }
+    
 }
 
