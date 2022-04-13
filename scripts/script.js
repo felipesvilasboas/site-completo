@@ -2,6 +2,7 @@ let escrever = document.querySelector('#escrever');
 let foto = document.querySelector('#foto');
 foto.addEventListener('mouseenter', entrar);
 foto.addEventListener('mouseout', sair);
+foto.addEventListener('click', clicarfoto);
 
 function entrar() {
     escrever.innerHTML = 'Sim, sou o Felipe Vilas Boas'
@@ -9,6 +10,11 @@ function entrar() {
 
 function sair() {
     escrever.innerHTML = 'Quem é Felipe Vilas Boas?'
+    foto.style.transform = 'scale(1.0)'
+}
+
+function clicarfoto() {
+    foto.style.transform = 'scale(1.5)'
 }
 
 let fundocaixa = document.querySelector('#fundocaixa')
