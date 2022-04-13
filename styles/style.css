@@ -179,9 +179,24 @@ main p {
     border-radius: 10px;
 }
 
-#caixa h2 {
+#fundocaixa h2 {
     font-family: 'Barlow', sans-serif;
     color: white;
+    text-align: center;
+}
+
+#estilos {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+}
+
+#estilos > img {
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.464);
+}
+
+#estilos > img:hover {
+    transform: scale(1.1);
 }
 
 #txt01 {
