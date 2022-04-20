@@ -64,3 +64,18 @@ function pegadinha() {
         window.open ('https://google.com')
     }
 }
+
+function corsite() {
+    let body = document.querySelector('body')
+    let night = document.querySelector('.night')
+    let ul01 = document.querySelector('.ul01')
+    let h2parte02 = document.querySelector('#h2parte02')
+    body.style.backgroundColor = '#22272E'
+    body.style.color = 'white'
+    night.style.color = 'white'
+    ul01.style.backgroundColor = 'green'
+    h2parte02.style.color = 'white'
+    let emoticonsite = document.querySelector('#emoticonsite')
+    emoticonsite.innerHTML = '&#x2600;'
+    emoticonsite.style.color = 'yellow'
+}

@@ -33,6 +33,12 @@ header {
     border-bottom: 0.1px solid rgba(0, 0, 0, 0.217);
 }
 
+#emoticonsite {
+    font-size: 1.2em;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
 .menu {
     display: flex;
     justify-content: center;
@@ -269,7 +275,15 @@ footer h2 {
 #ulfooter02 li:hover {
     border: 0px;
     
-}  
+}
+
+.night {
+    color: currentColor;
+}
+
+.night02 {
+    color: black;
+}
 
 @media screen and (max-width: 1185px) {
     header {
