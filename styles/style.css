@@ -14,6 +14,10 @@
     margin: 0px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #FAFAFA;
     background-image: url('../images/desk.svg');
@@ -66,6 +70,10 @@ header > div > h1 {
 #ulzero li {
     display: inline;
     padding: 0px 3px;
+}
+
+#contato {
+    cursor: pointer;
 }
 
 
@@ -230,6 +238,63 @@ main p {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
     padding: 20px;
+}
+
+#projetos {
+    margin-top: 50px;
+}
+
+#projetos h1 {
+    text-align: center;
+}
+
+#imagensprojetos {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+#imagensprojetos img {
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.213);
+    max-width: 500px;
+    padding-top: 15px;
+}
+
+#imagensprojetos img:hover {
+    transform: scale(1.1);
+}
+
+figcaption {
+    padding-top: 6px;
+    font-family: 'barlow', sans-serif;
+    text-align: center;
+}
+
+#btprojeto {
+    display: block;
+    margin: 40px auto;
+    font-size: 1.1em;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 500;
+    background-color: var(--color4);
+    color: white;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.249);
+    text-shadow: 1px 1px 15px rgba(0, 0, 0, 0.314);
+    padding: 15px 70px;
+    text-align: center;
+    border-radius: 1px 1px 6px 1px;
+    transition: .3s;
+    border-style: none;
+    cursor: pointer;
+}
+
+#btprojeto:hover {
+    transform: scale(1.1);
+    background-color: #0145AD;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.622);
+    animation: alternate;
 }
 
 footer {

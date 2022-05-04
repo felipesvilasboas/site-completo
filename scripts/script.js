@@ -78,4 +78,10 @@ function corsite() {
     let emoticonsite = document.querySelector('#emoticonsite')
     emoticonsite.innerHTML = '&#x2600;'
     emoticonsite.style.color = 'yellow'
-}
+        if (emoticonsite.innerHTML = '&#x2600;') {
+            emoticonsite.addEventListener('click', clicarsol)
+            function clicarsol() {
+                location.reload();
+            }
+        }
+}   
